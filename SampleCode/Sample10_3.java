@@ -17,7 +17,7 @@ class Sample10_3
         String str2 = br.readLine();
         char ch = str2.charAt(0);
 
-        int num = str1.indexOf(ch);     //文字chの位置を返す。
+        int num = str1.indexOf(ch);     //文字chが文字列strの何番目に位置しているかを返す。
 
         if(num != -1)
             System.out.println(str1 + "の" + (num + 1) + "番目に「" + ch + "」が見つかりました。");
