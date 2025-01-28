@@ -1,0 +1,33 @@
+//イベント処理を簡単にする。
+//アダプタクラスを利用する。
+//多くのメソッドをオーバーライドする必要のあるインターフェースを、
+//必要なメソッドだけをオーバライドするクラスに変換する役割を果たす。
+
+/*
+bt.addMouseListener(new SampleMouseAdapter());
+    ・・・
+class SampleMouseAdapter extends MouseAdapter
+{
+    public void mousePressed(MouseEvent e)
+    {
+        ・・・
+    }
+}
+*/
+
+//無名クラス(anonymous class)はクラス名を持たないクラス
+//無名クラスは、他のクラスの内部に記述される「内部クラス(inner class)」である。
+/*
+Main<Adapter<Methods
+*/
+
+//ラムダ式(lambda expression)
+
+/*
+bt.addMouseListener(new MouseAdapter(
+    e   ->
+    {
+        ・・・
+    }
+);
+*/
